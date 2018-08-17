@@ -124,8 +124,8 @@ $(document).ready(function() {
   function handleTaskSubmitRequest(event) {
     event.preventDefault();
 
-    var taskTitle = $(this).find('[name="title"]').val();
-    var taskContent = $(this).find('[name="content"]').val();
+    var taskTitle = $(this).find('[name="insert_task_name"]').val();
+    var taskContent = $(this).find('[name="insert_task_content"]').val();
 
     var requestUrl = apiRoot + 'createTask';
 

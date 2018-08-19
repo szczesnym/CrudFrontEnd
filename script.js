@@ -40,7 +40,8 @@ $(document).ready(function() {
       return $('<option>')
                 .addClass('crud-select__option')
                 .val(choice.id)
-                .text(choice.name || 'Unknown name');
+                //.text(choice.name || 'Unknown name');
+                 .text(choice.id || 'Unknown name');
     });
   }
 
